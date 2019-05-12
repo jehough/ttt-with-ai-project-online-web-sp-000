@@ -50,12 +50,12 @@ class Game
     end
   end
   def over?
-    self.draw? || self.won? != false
+    draw? || won? != false
   end
   def winner
-    if self.won? != false
-      place = self.won?[0]
-      win = board.cells[place]
+    if won? != false
+      place = won?[0]
+      win = self.board.cells[place]
       win
     end
   end
