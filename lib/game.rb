@@ -45,7 +45,7 @@ class Game
     winner
   end
   def draw?
-    if board.full? == true
+    if self.board.full? == true
       !won?
     end
   end
