@@ -11,12 +11,12 @@ class Players
       end
     end
     def move(board)
-      if !(self.mewin?(board) == nil)
-        self.mewin?(board)
-      elsif !(self.oppwin?(board) == nil)
-        self.oppwin?(board)
+      if !(mewin?(board) == nil)
+        mewin?(board)
+      elsif !(oppwin?(board) == nil)
+        oppwin?(board)
       else
-        self.seek_spot(board)
+        seek_spot(board)
       end
     end
     def row_full?(row)
