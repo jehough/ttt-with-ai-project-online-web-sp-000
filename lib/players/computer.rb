@@ -31,7 +31,7 @@ class Players
       elegant
     end
     def mewin?(board)
-      elegant = self.clone_board(board)
+      elegant = clone_board(board)
       xrows = elegant.map do |row|
           row.count {|e| e == self.token}
       end
