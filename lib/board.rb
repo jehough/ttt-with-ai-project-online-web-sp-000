@@ -20,7 +20,7 @@ class Board
     index
   end
   def position (input)
-    index = self.input_to_index(input)
+    index = input_to_index(input)
     @cells[index]
   end
   def full?
@@ -36,7 +36,7 @@ class Board
     counter
   end
   def taken?(input)
-    self.position(input) != " "
+    position(input) != " "
   end
   def valid_move?(input)
     input.to_i.between?(1,9) && !taken?(input)
