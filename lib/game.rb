@@ -72,7 +72,7 @@ class Game
   end
   def play
     until over? == true
-      self.turn
+      turn
     end
     if won?
       win_player = winner
